@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Exploration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+</head>
+<body>
+
+<!-- Header Section with Floating Menu -->
+<header class="header-bg">
+    <div class="menu-container">
+      <ul class="menu">
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about-us">About Us</a></li>
+      </ul>
+    </div>
+  
+    <div class="header-content">
+      <h1>Space Exploration</h1>
+      <p>Explore the mysteries of the universe</p>
+    </div>
+  </header>
+  
+
+  <!-- Main Content Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Mission Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="images/mars-mission.jpeg" class="card-img-top" alt="Mars Mission">
+          <div class="card-body">
+            <h5 class="card-title">Mars Mission</h5>
+            <p class="card-text">Explore Mars with NASA’s Perseverance Rover!</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#missionModal" onclick="loadMissionDetails('mars')">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="images/moon-landing.jpeg" class="card-img-top" alt="Moon Landing">
+          <div class="card-body">
+            <h5 class="card-title">Moon Landing</h5>
+            <p class="card-text">The historic Apollo missions that landed astronauts on the moon.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#missionModal" onclick="loadMissionDetails('moon')">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="images/space-station.jpeg" class="card-img-top" alt="Space Station">
+          <div class="card-body">
+            <h5 class="card-title">International Space Station</h5>
+            <p class="card-text">A multi-national project orbiting Earth for scientific research.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#missionModal" onclick="loadMissionDetails('iss')">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Mission Details -->
+  <div class="modal fade" id="missionModal" tabindex="-1" aria-labelledby="missionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="missionModalLabel">Mission Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <!-- Dynamic content will go here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Achievements Section -->
+   <section id="achievements" class="section-padding">
+    <div class="container">
+      <h2 class="section-title"><u>Our Achievements</u></h2>
+      <ul class="achievements-list">
+        <li>First successful Mars landing mission by Perseverance Rover.</li>
+        <li>Historic Apollo 11 moon landing in 1969.</li>
+        <li>First human to reach the edge of space - Alan Shepard in 1961.</li>
+        <li>International Space Station: A collaboration of 15 nations.</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Gallery Section -->
+  <section id="gallery" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="section-title"><u>Gallery</u></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/space1.jpg" class="img-fluid" alt="Space 1">
+        </div>
+        <div class="col-md-4">
+            <img src="images/space5.jpeg" class="img-fluid" alt="Space 3">
+          </div>
+          <div class="col-md-4">
+            <img src="images/space6.webp" class="img-fluid" alt="Space 3">
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Us Section -->
+  <section id="about-us" class="section-padding">
+    <div class="container">
+      <h2 class="section-title"><u>About Us</u></h2>
+      <p>We are a team of passionate individuals dedicated to exploring and understanding the universe. Our mission is to advance space exploration through groundbreaking research, technology, and international collaborations.</p>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2025 Space Exploration App. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
